@@ -7,9 +7,7 @@ namespace RomanNumerals.Logic
 {
     public class RomanNumerals
     {
-        public static string ToRoman(int input)
-        {
-            var mapNumberToRoman = new Dictionary<int, string> {
+        private static Dictionary<int, string> _mapNumberToRoman = new() {
                 { 1, "I" },
                 { 4, "IV" },
                 { 5, "V" },
@@ -25,10 +23,12 @@ namespace RomanNumerals.Logic
                 { 1000, "M" },
             };
 
+        public static string ToRoman(int input)
+        {
             var remainder = input;
             var output = new StringBuilder();
 
-            foreach(var numberToRoman in mapNumberToRoman.Reverse())
+            foreach(var numberToRoman in _mapNumberToRoman.Reverse())
             {
                 while (remainder >= numberToRoman.Key)
                 {
