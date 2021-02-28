@@ -17,7 +17,7 @@ namespace RomanNumerals.Logic.Tests
             Assert.Equal(expected, actual);
         }
 
-        [Fact(Skip="Not implemented yet")]
+        [Fact]
         public void TestToRoman_002()
         {
             int input = 2;

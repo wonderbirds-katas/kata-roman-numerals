@@ -37,5 +37,17 @@ namespace RomanNumerals.Logic.Tests
         {
             Assert.Equal(expected, RomanNumerals.ToRoman(input));
         }
+
+        [Theory]
+        [InlineData(4, "IV")]
+        [InlineData(9, "IX")]
+        [InlineData(40, "XL")]
+        [InlineData(90, "XC")]
+        [InlineData(400, "CD")]
+        [InlineData(900, "CM")]
+        public void ToRoman_NextMinusPrevious_MatchesExpectation(int input, string expected)
+        {
+            Assert.Equal(expected, RomanNumerals.ToRoman(input));
+        }
     }
 }
