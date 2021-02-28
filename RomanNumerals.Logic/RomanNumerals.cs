@@ -24,7 +24,7 @@ namespace RomanNumerals.Logic
 
             foreach(var numberToRoman in mapNumberToRoman.Reverse())
             {
-                if (remainder >= numberToRoman.Key)
+                while (remainder >= numberToRoman.Key)
                 {
                     remainder -= numberToRoman.Key;
                     output.Append(numberToRoman.Value);

@@ -18,9 +18,22 @@ namespace RomanNumerals.Logic.Tests
         }
 
         [Theory]
+        
         [InlineData(2, "II")]
-//        [InlineData(20, "XX")]
-        public void ToRoman_TwoIdenticalNumeralsResult_MatchesExpectation(int input, string expected)
+        [InlineData(20, "XX")]
+        [InlineData(200, "CC")]
+        [InlineData(2000, "MM")]
+
+        [InlineData(3, "III")]
+        [InlineData(30, "XXX")]
+        [InlineData(300, "CCC")]
+        [InlineData(3000, "MMM")]
+
+        [InlineData(4000, "MMMM")]
+
+        [InlineData(6, "VI")]
+        [InlineData(1666, "MDCLXVI")]
+        public void ToRoman_SimpleMultipleNumeralsResult_MatchesExpectation(int input, string expected)
         {
             Assert.Equal(expected, RomanNumerals.ToRoman(input));
         }
