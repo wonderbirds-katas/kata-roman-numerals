@@ -70,5 +70,25 @@ namespace RomanNumerals.Logic.Tests
         {
             Assert.Equal(expected, RomanNumerals.FromRoman(input));
         }
+
+        [Theory]
+        [InlineData("II", 2)]
+        [InlineData("XX", 20)]
+        [InlineData("CC", 200)]
+        [InlineData("MM", 2000)]
+
+        [InlineData("III", 3)]
+        [InlineData("XXX", 30)]
+        [InlineData("CCC", 300)]
+        [InlineData("MMM", 3000)]
+
+        [InlineData("MMMM", 4000)]
+
+        [InlineData("VI", 6)]
+        [InlineData("MDCLXVI", 1666)]
+        public void FromRoman_SimpleMultipleNumeralsInput_MatchesExpectation(string input, int expected)
+        {
+            Assert.Equal(expected, RomanNumerals.FromRoman(input));
+        }
     }
 }
