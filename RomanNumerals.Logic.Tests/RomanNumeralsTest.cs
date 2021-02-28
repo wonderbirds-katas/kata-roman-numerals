@@ -49,5 +49,13 @@ namespace RomanNumerals.Logic.Tests
         {
             Assert.Equal(expected, RomanNumerals.ToRoman(input));
         }
+
+        [Theory]
+        [InlineData(1999, "MCMXCIX")]
+        [InlineData(1444, "MCDXLIV")]
+        public void ToRoman_ComplicatedStuff_MatchesExpectation(int input, string expected)
+        {
+            Assert.Equal(expected, RomanNumerals.ToRoman(input));
+        }
     }
 }
