@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace RomanNumerals.Logic
@@ -20,19 +21,22 @@ namespace RomanNumerals.Logic
 
             var remainder = input;
             var output = new StringBuilder();
-            while (remainder > 0)
+
+            foreach(var numberToRoman in mapNumberToRoman.Reverse())
             {
-                if (mapNumberToRoman.ContainsKey(remainder))
+                if (remainder >= numberToRoman.Key)
                 {
-                    output.Append(mapNumberToRoman[remainder]);
-                    remainder -= remainder;
-                }
-                else
-                {
-                    output.Append('I');
-                    remainder -= 1;
+                    remainder -= numberToRoman.Key;
+                    output.Append(numberToRoman.Value);
                 }
             }
+
+            while (remainder > 0)
+            {
+                remainder -= 1;
+                output.Append('I');
+            }
+
             return output.ToString();
         }
 
