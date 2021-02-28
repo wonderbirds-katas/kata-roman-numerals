@@ -40,6 +40,19 @@ namespace RomanNumerals.Logic
             return output.ToString();
         }
 
-        public static int FromRoman(string input) => 1;
+        public static int FromRoman(string input) 
+        {
+            var mapRomanToNumber = _mapNumberToRoman.ToDictionary(t => t.Value, t => t.Key);
+
+            var remainder = input.ToList();
+            var output = 0;
+
+            foreach(var romanLetter in input.Reverse())
+            {
+                output += mapRomanToNumber[romanLetter.ToString()];
+            }
+
+            return output;
+        }
     }
 }

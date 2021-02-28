@@ -57,5 +57,18 @@ namespace RomanNumerals.Logic.Tests
         {
             Assert.Equal(expected, RomanNumerals.ToRoman(input));
         }
+
+        [Theory]
+        [InlineData("I", 1)]
+        [InlineData("V", 5)]
+        [InlineData("X", 10)]
+        [InlineData("L", 50)]
+        [InlineData("C", 100)]
+        [InlineData("D", 500)]
+        [InlineData("M", 1000)]
+        public void FromRoman_SingleNumeralInput_MatchesExpectation(string input, int expected)
+        {
+            Assert.Equal(expected, RomanNumerals.FromRoman(input));
+        }
     }
 }
