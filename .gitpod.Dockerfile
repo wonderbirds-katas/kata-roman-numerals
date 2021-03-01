@@ -6,4 +6,4 @@ FROM gitpod/workspace-dotnet
 #
 # More information: https://www.gitpod.io/docs/config-docker/
 
-RUN curl -sL install.mob.sh | sh
+RUN curl -sL install.mob.sh | sudo sh
