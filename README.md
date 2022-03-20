@@ -1,14 +1,8 @@
 # Kata: Roman Numerals Helper
 
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/wonderbird/kata-roman-numerals)
-[![Build Status Badge](https://github.com/wonderbird/kata-roman-numerals/workflows/.NET/badge.svg)](https://github.com/wonderbird/kata-roman-numerals/actions?query=workflow%3A%22.NET)
-[![Test Coverage (coveralls)](https://img.shields.io/coveralls/github/wonderbird/kata-roman-numerals)](https://coveralls.io/github/wonderbird/kata-roman-numerals)
-[![Test Coverage (codeclimate)](https://img.shields.io/codeclimate/coverage-letter/wonderbird/kata-roman-numerals)](https://codeclimate.com/github/wonderbird/kata-roman-numerals/trends/test_coverage_total)
-[![Code Maintainability](https://img.shields.io/codeclimate/maintainability-percentage/wonderbird/kata-roman-numerals)](https://codeclimate.com/github/wonderbird/kata-roman-numerals)
-[![Issues in Code](https://img.shields.io/codeclimate/issues/wonderbird/kata-roman-numerals)](https://codeclimate.com/github/wonderbird/kata-roman-numerals/issues)
-[![Technical Debt](https://img.shields.io/codeclimate/tech-debt/wonderbird/kata-roman-numerals)](https://codeclimate.com/github/wonderbird/kata-roman-numerals)
-[![CodeScene Code Health](https://codescene.io/projects/13366/status-badges/code-health)](https://codescene.io/projects/13366/jobs/latest-successful/results)
-[![CodeScene System Mastery](https://codescene.io/projects/13366/status-badges/system-mastery)](https://codescene.io/projects/13366/jobs/latest-successful/results)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/wonderbirds-katas/kata-roman-numerals)
+[![Build Status Badge](https://github.com/wonderbirds-katas/kata-roman-numerals/workflows/.NET/badge.svg)](https://github.com/wonderbirds-katas/kata-roman-numerals/actions?query=workflow%3A%22.NET)
+[![Test Coverage (coveralls)](https://img.shields.io/coveralls/github/wonderbirds-katas/kata-roman-numerals)](https://coveralls.io/github/wonderbirds-katas/kata-roman-numerals)
 
 This repository implements the [Roman Numerals Helper Kata as found on CodeWars](https://www.codewars.com/kata/51b66044bce5799a7f000003/train/csharp)
 
