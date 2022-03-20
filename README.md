@@ -1,7 +1,7 @@
 # Kata: Roman Numerals Helper
 
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/wonderbirds-katas/kata-roman-numerals)
-[![Build Status Badge](https://github.com/wonderbirds-katas/kata-roman-numerals/workflows/.NET/badge.svg)](https://github.com/wonderbirds-katas/kata-roman-numerals/actions?query=workflow%3A%22.NET)
+[![Build Status Badge](https://github.com/wonderbirds-katas/kata-roman-numerals/workflows/.NET/badge.svg)](https://github.com/wonderbirds-katas/kata-roman-numerals/actions/workflows/dotnet.yml)
 [![Test Coverage (coveralls)](https://img.shields.io/coveralls/github/wonderbirds-katas/kata-roman-numerals)](https://coveralls.io/github/wonderbirds-katas/kata-roman-numerals)
 
 This repository implements the [Roman Numerals Helper Kata as found on CodeWars](https://www.codewars.com/kata/51b66044bce5799a7f000003/train/csharp)
